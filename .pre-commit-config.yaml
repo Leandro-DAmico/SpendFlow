@@ -1,0 +1,18 @@
+repos:
+  - repo: local
+    hooks:
+      - id: ruff-check
+        name: Ruff lint
+        entry: python -m ruff check backend/ledgerlens backend/tests backend/alembic
+        language: system
+        pass_filenames: false
+      - id: ruff-format
+        name: Ruff format check
+        entry: python -m ruff format --check backend/ledgerlens backend/tests backend/alembic
+        language: system
+        pass_filenames: false
+      - id: frontend-check
+        name: Frontend lint and typecheck
+        entry: npm --prefix frontend run check
+        language: system
+        pass_filenames: false

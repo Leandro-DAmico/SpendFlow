@@ -1,0 +1,33 @@
+# Local financial data and secrets
+.env
+*.db
+*.db-*
+*.sqlite*
+*.bak
+backups/
+data/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.hypothesis/
+
+# Node and build
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+output/
+.playwright-cli/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

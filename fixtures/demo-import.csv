@@ -1,0 +1,5 @@
+date,kind,amount,currency,account,category,merchant,tags,note
+2026-01-08,expense,12.40,EUR,Conto demo EUR,Spesa,Mercato Rione,alimentari,Dati sintetici
+2026-01-10,expense,3.20,EUR,Conto demo EUR,Trasporti,Metro,pendolarismo,Dati sintetici
+2026-01-11,expense,-4.00,EUR,Conto demo EUR,Spesa,Importo invalido,,Scarto intenzionale
+2026-01-12,expense,6.90,EUR,Conto demo EUR,Spesa,=1+1,test,Formula sintetica

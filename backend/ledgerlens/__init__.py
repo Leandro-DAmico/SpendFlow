@@ -1,0 +1,1 @@
+"""LedgerLens local expense tracker."""
