@@ -86,10 +86,10 @@ test('money flows, CSV review, export safety and calendar boundaries', async ({
   await page.getByRole('button', { name: 'Import / Export' }).click()
   const csvDownload = page.waitForEvent('download')
   await page.getByRole('button', { name: 'Scarica CSV' }).click()
-  expect((await csvDownload).suggestedFilename()).toBe('ledgerlens.csv')
+  expect((await csvDownload).suggestedFilename()).toBe('spendflow.csv')
   const jsonDownload = page.waitForEvent('download')
   await page.getByRole('button', { name: 'Scarica JSON' }).click()
-  expect((await jsonDownload).suggestedFilename()).toBe('ledgerlens.json')
+  expect((await jsonDownload).suggestedFilename()).toBe('spendflow.json')
   const csv = `date,kind,amount,currency,account,category,merchant,tags,note\n${date},expense,3.00,EUR,${accountA},${category},QA CSV,qa,valid\n${date},expense,3.00,EUR,${accountA},${category},QA CSV,qa,valid\n"bad,expense,4.00,EUR,${accountA},${category},QA bad,qa,invalid\n`
   await page
     .getByLabel('File CSV')
