@@ -1,1 +1,1 @@
-LedgerLens — privacy-first local expense tracker with exact minor-unit money, refund/transfer-safe analytics, validated CSV import and accessible React dashboard.
+SpendFlow — gestione e analisi delle spese personali privacy-first e local-first con gestione accurata delle valute, tracciamento rimborsi/trasferimenti, import CSV validato e dashboard React accessibile. Sviluppato con FastAPI, React, SQLite e TypeScript.

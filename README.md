@@ -39,7 +39,7 @@ cd backend
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -e '.[dev]'
 .\.venv\Scripts\alembic.exe upgrade head
-.\.venv\Scripts\uvicorn.exe ledgerlens.api:app --host 127.0.0.1 --port 8000
+.\.venv\Scripts\uvicorn.exe spendflow.api:app --host 127.0.0.1 --port 8000
 ```
 
 ```powershell
@@ -55,7 +55,7 @@ cd backend
 python3.12 -m venv .venv
 .venv/bin/python -m pip install -e '.[dev]'
 .venv/bin/alembic upgrade head
-.venv/bin/uvicorn ledgerlens.api:app --host 127.0.0.1 --port 8000
+.venv/bin/uvicorn spendflow.api:app --host 127.0.0.1 --port 8000
 ```
 
 ```bash
@@ -74,9 +74,9 @@ Con le dipendenze installate:
 
 ```powershell
 cd backend
-.\.venv\Scripts\ruff.exe check ledgerlens tests alembic
-.\.venv\Scripts\ruff.exe format --check ledgerlens tests alembic
-.\.venv\Scripts\mypy.exe --strict ledgerlens
+.\.venv\Scripts\ruff.exe check spendflow tests alembic
+.\.venv\Scripts\ruff.exe format --check spendflow tests alembic
+.\.venv\Scripts\mypy.exe --strict spendflow
 .\.venv\Scripts\python.exe -m pytest -q
 .\.venv\Scripts\alembic.exe upgrade head
 ```
