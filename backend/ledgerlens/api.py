@@ -18,7 +18,9 @@ from .db import get_db
 from .domain import MINOR_DIGITS, balance_delta, month_bounds, previous_period, to_minor
 from .models import Account, Budget, Category, Transaction
 
-FRONTEND_ORIGIN = os.getenv("SPENDFLOW_FRONTEND_ORIGIN", os.getenv("LEDGERLENS_FRONTEND_ORIGIN", "http://127.0.0.1:5173"))
+FRONTEND_ORIGIN = os.getenv(
+    "SPENDFLOW_FRONTEND_ORIGIN", os.getenv("LEDGERLENS_FRONTEND_ORIGIN", "http://127.0.0.1:5173")
+)
 app = FastAPI(
     title="SpendFlow API",
     version="0.1.0",
